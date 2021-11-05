@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        #box1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr)
+        }
+        #box2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 100px;
+            gap: 20px;
+        }
+        #first ul{
+            display: flex;
+            justify-content:space-evenly;
+
+        }
+        img{
+            display: flex;
+           width:50%
+        }
+        #imgbox{
+            display: flex;
+            background-color: white;
+            border: 1px solid white;
+        }
+        .navbar ul{
+            list-style: none;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        .navbar ul a{
+            text-decoration: none;
+            padding: 0 20px;
+            line-height:40px;
+            display: block;
+        }
+        .navbar ul li{
+            float: left;
+            position: relative;
+            margin: 0;
+
+        }
+        .navbar ul ul{
+            position:fixed;
+            background-color: white;
+            display:none;
+        }
+        .navbar ul ul li{
+            display: flex;
+            position: relative;
+            float: left;
+            justify-content: space-evenly;
+   
+        }
+        .navbar ul li:hover ul{
+            display: flex;
+            display: block;
+            float: left;
+            left: 0;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <hr>
+    <div id="first">
+        <ul>
+            <li><a href="">Free Shipping</a></li>
+            <li><a href="">Return To Store</a></li>
+            <li><a href="">Click & collect</a></li>
+            <li><a href="">Download OUr Apps</a></li>
+            <li><a href="">Store Locator</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Women.html">Women </a> 
+                
+                <ul>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">Dresses & Jumpsuits</a></li>
+                    <li><a href="">Sportswear</a></li>
+                    <li><a href="">Winterwear</a></li>
+                    <li><a href="">Ethnic Wear</a></li>
+                    <li><a href="">Lingerie</a></li>
+                    <li><a href="">Sleepwear</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Shoes</a></li>
+                </ul>
+            </li>
+            <li><a href="men.html">Men </a>
+                <ul>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">Sportswear</a></li>
+                    <li><a href="">Loungewear</a></li>
+                    <li><a href="">Innerwear</a></li>
+                    <li><a href="">Indian Wear</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Winterwear</a></li>
+                    <li><a href="">The Shirt Shop</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </li>
+            <li><a href="girls.html"> Girls</a>
+                <ul>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">Essentials</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Indian Wear</a></li>
+                    <li><a href="">Winterwear</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </li>
+            <li><a href="boys.html"> Boys</a>
+                <ul>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">Essentials</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Indian Wear</a></li>
+                    <li><a href="">Winterwear</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </li>
+            <li> <input type="text" placeholder="What are you looking for?"></li>
+            <li><a href="sign.html">Sign Up - Sign In</a></li>
+            <li><a href="basket.html">Basket</a></li> 
+        </ul>
+      
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <div id="box1">
+        <div>
+            <img src="" alt="">
+            <button>Shop Women</button>
+        </div>
+        <div>
+            <img src="" alt="">
+            <button>Shop Men</button>
+        </div>
+        <div>
+            <img src="" alt="">
+            <button>Shop Girls</button>
+        </div>
+        <div>
+            <img src="" alt="">
+            <button>Shop Boys</button>
+        </div>
+    </div>
+<hr>
+<div id="box2">
+    <div>
+        <h1>Subscribe to our awesome emails.</h1>
+        <h3>Get our latest offers and news straight in your inbox.</h3>
+       
+    </div>
+   
+    <div>
+        <h1>Download our apps</h1>
+        <h3>Shop our products and offers on the go.</h3>
+    </div>
+    <div>
+        <input type="text" placeholder="Please enter an email address">
+        <button onClick="subscribe">Subscribe</button>
+    </div>
+    <div id="imgbox">
+        <div>
+            <img src="2560px-Download_on_the_App_Store_Badge.svg.png" alt="">
+        </div>
+       <div>
+          <img src="2560px-Google_Play_Store_badge_EN.svg.png" alt="">
+       </div>
+    </div>
+</div>
+
+    <div id="box">
+        <div>
+            <h3>Women</h3>
+            <ul>
+                <a href=""><li>Tops</li></a>
+                <a href=""><li>Bottoms</li></a>
+                <a href=""><li>Dresses & Jumpsuits</li></a>
+                <a href=""><li>Sportswear</li></a>
+                <a href=""><li>Winterwear</li></a>
+                <a href=""><li>Ethnic Wear</li></a>
+                <a href=""><li>Lingerie</li></a>
+                <a href=""><li>Sleepwear</li></a>
+                <a href=""><li>Accessories</li></a>
+                <a href=""><li>Shoes</li></a>
+            </ul>
+        </div>
+        <div>
+            <h3>Men</h3>
+            <ul>
+                <a href=""><li>Tops</li></a>
+                <a href=""><li>Bottoms</li></a>
+                <a href=""><li>Sportswear</li></a>
+                <a href=""><li>Winterwear</li></a>
+                <a href=""><li>Accessories</li></a>
+                <a href=""><li>Shoes</li></a>
+            </ul>
+        </div>
+        <div>
+            <h3>Boys</h3>
+            <ul>
+                <a href=""><li>Tops</li></a>
+                <a href=""><li>Bottoms</li></a>
+                <a href=""><li>Indian Wear</li></a>
+                <a href=""><li>Winterwear</li></a>
+                <a href=""><li>Essentials</li></a>
+                <a href=""><li>Accessories</li></a>
+                <a href=""><li>Shoes</li></a>
+            </ul>
+        </div>
+        <div>
+            <h3>Girls</h3>
+            <ul>
+                <a href=""><li>Tops</li></a>
+                <a href=""><li>Bottoms</li></a>
+                <a href=""><li>Indian Wear</li></a>
+                <a href=""><li>Winterwear</li></a>
+                <a href=""><li>Essentials</li></a>
+                <a href=""><li>Accessories</li></a>
+                <a href=""><li>Shoes</li></a>
+            </ul>
+        </div>
+        <div>
+            <h3>Explore</h3>
+            <ul>
+                <a href=""><li>Offers</li></a>
+                <a href=""><li>Magazine</li></a>
+            </ul>
+        </div>
+        <div>
+            <h3>About</h3>
+            <ul>
+                <a href=""><li>About us</li></a>
+                <a href=""><li>Write to us</li></a>
+                <a href=""><li>Careers</li></a>
+                <a href=""><li>Take a tour</li></a>
+                <a href=""><li>Blog</li></a>
+                <a href=""><li>Store Locator</li></a>
+                <a href=""><li>Landmark Cares</li></a>
+            </ul>
+        </div>
+        <div>
+            <h3>Help</h3>
+            <ul>
+                <a href=""><li>Contact us</li></a>
+                <a href=""><li>Shipping</li></a>
+                <a href=""><li>Return Process</li></a>
+                <a href=""><li>Return Policy</li></a>
+                <a href=""><li>Help Centre</li></a>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>
+<script>
+   
+
+    function subscribe(){
+        alert("Subscibed")
+    }
+    
+</script>
